@@ -1,0 +1,27 @@
+<div class="card">
+    
+    <div class="header">
+        <div class="title">
+            <h3>Product information</h3>
+        </div>
+    </div>
+
+    <div class="body" >
+        <div class="row">
+            <span class="label"> Name : </span>
+            <span class="value"> {{ product.name }}</span>
+        </div>
+        <div class="row">
+            <span class="label"> Category : </span>
+            <span class="value"> {{ product.category }}</span>
+        </div>
+        <div class="row">
+            <span class="label"> Price : </span>
+            <span class="value"> {{ product.price | currency }}</span>
+        </div>
+        <div class="row">
+            <span class="label"> In Stock : </span>
+            <span class="value"> {{ product.inStock ? 'Yes' : 'No'}}</span>
+        </div>
+    </div>
+</div>
